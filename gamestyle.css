@@ -72,6 +72,12 @@ a {
 	color: white;	
 }
 
+li {
+	color: white;
+	font-size: 120%;
+	margin-bottom: 5px;
+}
+
 /*NAVIGATION*/
 .menu {
   list-style-type: none;
