@@ -13,27 +13,31 @@ html {
 	background-height: 100%;
 	margin-left: none;
 	margin-right: none;
-	margin-top: 1px;
+	margin-top: 10px;
 }
 
-.center {
-	display: block;
-	margin-left: 40%;
-	/*margin-right: 25%;*/
+.fancy {
+	font-family: "Copperplate";
 }
 
 .header {
-	margin-top: 5%;
+	text-shadow:
+			-0.5px -0.5px 0 #000,
+			0.5px -0.5px 0 #000,
+			-0.5px 0.5px 0 #000,
+			0.5px 0.5px 0 #000;
 }
 
 /*TEXT*/
+
 h1 {
-	font-size: 300%;
+	font-size: 400%;
 	font-weight: bold;
 	color: white;
 	/*color: rgb(66,50,38)*/;
 	margin-bottom: 0px;
-	margin-top: 2%;
+	margin-top: 20px;
+	margin-left: 10px;
 	
 }
 
@@ -42,11 +46,14 @@ h2 {
 	color: white;
 	/*color: rgb(66,50,38)*/;
 	margin-bottom: 2px;
+	margin-left: 10px;
+	text-outline: 1px black solid ;
 }
 
 h3 {
 	font-size: 110%;
 	margin-top: 7px;
+	margin-left: 10px;
 	color: white;
 	font-weight: bold;
 	/*color: rgb(66,50,38)*/;
@@ -55,13 +62,14 @@ h3 {
 h4 {
 	font-size: 110%;
 	margin-top: 2px;
+	margin-left: 10px;
 	color: white;
 	/*color: rgb(66,50,38)*/;
 }
 
 p {
-	font-size: 120%; 
-	font-family: "Gill sans";
+	font-size: 110%; 
+	font-family: monospace;
 	margin: 25px;
 	/*background-color: rgba(255, 255, 255, 0.65);*/
 	color:white;
@@ -73,9 +81,24 @@ a {
 }
 
 li {
+	font-family: monospace "Copperplate";
 	color: white;
 	font-size: 120%;
-	margin-bottom: 5px;
+	
+	margin-bottom: 10px;
+
+}
+
+ul{
+	list-style-type: circle; 
+	margin-bottom: 10px;
+} 
+
+.tired {
+	list-style-type: square; 
+}
+.sotired {
+	font-family: monospace;
 }
 
 /*NAVIGATION*/
@@ -91,6 +114,7 @@ li {
 
 .page {
   float: left;
+  margin-bottom: 0px;
 }
 
 .page a {
@@ -98,6 +122,7 @@ li {
   color: white;
   padding: 14px 16px;
   text-decoration: none;
+  font-family: "Copperplate";
 }
 
 .page a:hover {
@@ -106,6 +131,19 @@ li {
 
 .page a.active {
   background-color: rgb(71, 114, 143);
+}
+
+/*IMAGES*/
+img, iframe {
+	outline-style: solid;
+	outline-color: white;
+	margin-right: 30px;
+	margin-left: 30px;
+}
+
+iframe {
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 /* EXTRA
@@ -125,17 +163,8 @@ h2 {
 	margin-left: 70%;
 	margin-right: 30%;
 }
+
 */
 
-img, iframe {
-	outline-style: solid;
-	outline-color: white;
-	margin-right: 30px;
-	margin-left: 30px;
-}
 
-iframe {
-	margin-top: 20px;
-	margin-bottom: 20px;
-}
 
